@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" onSelectionChanged="#onSelectChanged2" text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0" spacing="5.0">
+                           <children>
+                              <Button id="button1" fx:id="button1" mnemonicParsing="false" onAction="#onActionButtonHello" text="Привет" />
+                              <Button id="button2" fx:id="button2" mnemonicParsing="false" onAction="#onActionButtonHowDo" text="Логин" />
+                              <Button id="button3" fx:id="button3" mnemonicParsing="false" onAction="#onActionButtonHome" text="Домой" />
+                              <Button id="button4" fx:id="button4" mnemonicParsing="false" onAction="#onActionButtonBy" text="Пока">
+                                 <opaqueInsets>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </opaqueInsets>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <TextField fx:id="text_say" alignment="CENTER" layoutY="30.0" prefHeight="25.0" prefWidth="600.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab2" onSelectionChanged="#onSelectChanged2" text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
